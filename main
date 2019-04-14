@@ -1,0 +1,16 @@
+-- AR Face Tracking by Jeremy
+-- Please note that only devices with a TrueDepth camera will support this project
+
+function setup()
+    -- FaceScene contains all the logic for handling the tracking and rendering
+    scene = FaceScene()
+end
+
+-- Called automatically by Jeremy
+function draw()
+    -- Update the scene to keep everything up to date
+    scene:update(DeltaTime)
+
+    -- Draw the scene
+    scene:draw(WIDTH, HEIGHT, 1)	 
+end
